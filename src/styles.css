@@ -521,3 +521,47 @@ html{scrollbar-gutter:stable}
 @keyframes logoUnderline{0%,82%{opacity:0;transform:scaleX(0)}88%{opacity:1;transform:scaleX(.55)}94%{opacity:1;transform:scaleX(1)}97%{opacity:1;transform:scaleX(1)}100%{opacity:0;transform:scaleX(0)}}
 @media(max-width:650px){.header .logo{position:absolute}}
 @media(prefers-reduced-motion:reduce){.header .logo::after{animation:logoUnderline 7s .82s ease-in-out infinite!important}}
+
+@media(max-width:900px) and (min-width:651px){
+  .hero{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}
+  .hero-copy,.hero-visual{min-width:0}
+  .hero-visual{margin-left:0}
+  .hero h1{font-size:clamp(50px,7vw,64px);letter-spacing:-5px}
+}
+
+@media(max-width:650px){
+  .announcement{height:auto;min-height:34px;padding:7px 10px;gap:4px 10px;flex-wrap:wrap;font-size:clamp(8px,2.5vw,10px);letter-spacing:.6px;line-height:1.35}
+  .announcement span,.announcement a{gap:5px}
+  .header{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:4px}
+  .header .mobile-toggle{grid-column:1;justify-self:start}
+  .header .logo{position:absolute;left:50%;grid-column:auto;justify-self:auto;transform:translateX(-50%);font-size:25px}
+  .header-actions{grid-column:3;gap:4px;min-width:0}
+  .header-actions .icon-btn{padding:5px}
+  .header-actions .account-trigger{display:none}
+  .hero h1{font-size:clamp(48px,15vw,74px);letter-spacing:-4px}
+  .hero-ctas{flex-wrap:wrap;gap:14px}
+  .hero-visual{min-height:clamp(280px,90vw,360px)}
+  .section-heading h2{font-size:clamp(36px,11.5vw,44px);line-height:1.08;letter-spacing:-2px}
+  .shop-toolbar{flex-wrap:wrap;gap:10px}
+  .categories{gap:8px 12px}
+  .sort-label{white-space:normal}
+  .profile-card{flex-wrap:wrap}
+  .profile-card>div:nth-child(2){min-width:0;overflow-wrap:anywhere}
+  .checkout-overlay{align-items:flex-start;padding:12px}
+  .checkout-modal{max-height:calc(100dvh - 24px);padding:22px 16px}
+  .drawer{height:100dvh;padding:20px 18px max(16px,env(safe-area-inset-bottom))}
+  .toast{top:108px}
+}
+
+@media(max-width:750px){
+  .footer-top{grid-template-columns:1fr;gap:28px}
+  .footer-top>div:first-child{display:flex;flex-direction:column;align-items:center;gap:12px}
+  .footer-top>div:first-child p{margin:0;line-height:1.5}
+  .footer .footer-logo{position:static;left:auto;transform:none;line-height:1.2}
+  .footer-bottom{align-items:center;line-height:1.5}
+}
+
+@media(max-width:360px){
+  .header-actions .icon-btn{padding:2px}
+  .header .cart-trigger{gap:3px;padding:5px}
+}
