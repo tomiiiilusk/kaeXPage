@@ -6,14 +6,14 @@ import {
 import { AdminPage, AuthModal, CheckoutModal, CustomerPage, ProductPage } from './DemoScreens.jsx';
 
 const products = [
-  { id: 1, name: 'REMERA ESSENTIALS NEGRA c/ NEGRO', category: 'Remeras', price: 24900, old: 29900, tag: 'BEST SELLER', color: 'Negro', image: '/images/remera-essentials.webp' },
-  { id: 2, name: 'PANTALON BAGGY CORTEIZ', category: 'Pantalones', price: 58900, tag: 'NUEVO', color: 'Negro', image: '/images/lompa-corteiz.webp' },
-  { id: 3, name: 'HOODIE ESSENTIALS FEAR OF GOD | JET BLACK', category: 'Buzos', price: 64900, tag: '', color: 'Negro', image: '/images/buzo-essentials.webp' },
-  { id: 4, name: 'REMERA CORTEIZ | PROPERTY - REGULAR FIT', category: 'Remeras', price: 27900, tag: '', color: 'Negro', image: '/images/reme-corteiz.webp' },
-  { id: 5, name: 'SWEATPANT ESSENTIALS FEAR OF GOD | DARK OATMEAL', category: 'Pantalones', price: 69900, tag: 'LIMITED', color: 'Gris', image: '/images/lompa-eseentials.webp' },
-  { id: 6, name: 'HOODIE HELLSTAR | UNIFORM GLITTER BLACK', category: 'Buzos', price: 72900, tag: '', color: 'Negro', image: '/images/hellstar-buzo.webp' },
-  { id: 7, name: 'ZIP MIXED EMOTION STRASS | NEVER DIE BLACK', category: 'Camperas', price: 84900, tag: 'NUEVO', color: 'Negro', image: '/images/emotion-campera.webp' },
-  { id: 8, name: 'CAMPERA NOCTA NIKE | Tech Fleece Negro', category: 'Camperas', price: 92900, tag: '', color: 'Negro', image: '/images/nocta-campera.webp' },
+  { id: 1, name: 'REMERA ESSENTIALS NEGRA c/ NEGRO', category: 'Remeras', price: 24900, old: 29900, tag: 'BEST SELLER', color: 'Negro', image: 'images/remera-essentials.webp' },
+  { id: 2, name: 'PANTALON BAGGY CORTEIZ', category: 'Pantalones', price: 58900, tag: 'NUEVO', color: 'Negro', image: 'images/lompa-corteiz.webp' },
+  { id: 3, name: 'HOODIE ESSENTIALS FEAR OF GOD | JET BLACK', category: 'Buzos', price: 64900, tag: '', color: 'Negro', image: 'images/buzo-essentials.webp' },
+  { id: 4, name: 'REMERA CORTEIZ | PROPERTY - REGULAR FIT', category: 'Remeras', price: 27900, tag: '', color: 'Negro', image: 'images/reme-corteiz.webp' },
+  { id: 5, name: 'SWEATPANT ESSENTIALS FEAR OF GOD | DARK OATMEAL', category: 'Pantalones', price: 69900, tag: 'LIMITED', color: 'Gris', image: 'images/lompa-eseentials.webp' },
+  { id: 6, name: 'HOODIE HELLSTAR | UNIFORM GLITTER BLACK', category: 'Buzos', price: 72900, tag: '', color: 'Negro', image: 'images/hellstar-buzo.webp' },
+  { id: 7, name: 'ZIP MIXED EMOTION STRASS | NEVER DIE BLACK', category: 'Camperas', price: 84900, tag: 'NUEVO', color: 'Negro', image: 'images/emotion-campera.webp' },
+  { id: 8, name: 'CAMPERA NOCTA NIKE | Tech Fleece Negro', category: 'Camperas', price: 92900, tag: '', color: 'Negro', image: 'images/nocta-campera.webp' },
 ];
 
 const tickerMessages = [
@@ -439,7 +439,7 @@ function App() {
             <div className="hero-foot"><div className="avatars"><span>K</span><span>X</span><span>+</span></div><p>Diseñado para moverte<br/><b>a tu manera.</b></p></div>
           </div>
           <div className="hero-visual">
-            <div className="hero-image"><img src="/images/inicio.webp" alt="Look urbano kaeX"/></div>
+            <div className="hero-image"><img src="images/inicio.webp" alt="Look urbano kaeX"/></div>
             <div className="hero-stamp"><span>kaeX</span><small>NEW<br/>SEASON<br/>2026</small></div>
             <div className="vertical-note">NO RULES. JUST YOUR STYLE.</div>
             <div className="hero-index">01 <span>/</span> 03</div>
@@ -473,7 +473,7 @@ function App() {
                 <div className="home-review-stars" aria-label="5 de 5 estrellas">{Array.from({ length: 5 }, (_, starIndex) => <Star key={starIndex} size={14} fill="currentColor"/>)}</div>
                 <blockquote>“{review.quote}”</blockquote>
                 <div className="home-review-author">
-                  <img src="/images/avatar-anonimo.svg" alt={`Avatar ilustrado anónimo ${index + 1}`}/>
+                  <img src="images/avatar-anonimo.svg" alt={`Avatar ilustrado anónimo ${index + 1}`}/>
                   <div><b>{review.name}</b><span>{review.product}</span></div>
                 </div>
               </article>
